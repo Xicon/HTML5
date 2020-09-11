@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div{
+	width: 400px;
+	height: 400px;
+}
+img{
+	display: block;
+	width: 400px;
+	height: 400px;
+	-webkit-filter: grayscale(1); //灰色调
+}
+img:hover{
+	
+	animation: filter 3s backwards;
+}
+@keyframes filter{
+	from{
+		-webkit-filter: grayscale(1);
+	}
+	to{
+		-webkit-filter: grayscale(0);
+	}
+}
