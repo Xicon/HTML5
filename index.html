@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>911</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			img{
+				display: block;
+				width: 400px;
+				height: 400px;
+				
+				-webkit-filter: grayscale(1); //灰色调
+			}
+			img:hover{
+				
+				animation: filter 3s backwards;
+			}
+			@keyframes filter{
+				from{
+					-webkit-filter: grayscale(1);
+				}
+				to{
+					-webkit-filter: grayscale(0);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<img src="./img/meimeng.JPG" alt="">
+	</body>
+</html>
